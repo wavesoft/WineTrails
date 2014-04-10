@@ -1,0 +1,106 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+	<head>
+		<title>Maps Test</title>
+		<link rel="stylesheet" type="text/css" href="css/core.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+
+			<!-- Header -->
+			<div class="row" id="p-header">
+				<div class="col-xs-6">
+					<div class="logo">
+						<h1>WineTrails</h1>
+						<span>May the wine be with you</span>
+					</div>
+				</div>
+				<div class="col-xs-6 text-right">
+					<button class="btn btn-info" id="btn-take-part">Wine producer? Take part!</button>
+				</div>
+			</div>
+
+			<!-- Map -->
+			<div id="p-map">
+				<div id="map-element"></div>
+				<div id="map-query">
+
+					<form class="form-inline" role="form">
+						<div class="form-group">
+							<label class="sr-only" for="inp-location">Location</label>
+							<input type="text" name="region" class="form-control" id="inp-location" placeholder="Location (ex. Geneva)">
+						</div>
+						<div class="form-group inline-datetime">
+
+							<label class="sr-only" for="inp-datetime_from">From</label>
+			                <div class="input-group date form_datetime col-md-5" data-date-format="dd/mm/yy hh:ii" data-link-field="inp-datetime_from">
+			                    <input class="form-control" size="16" type="text" value="" name="dt-from" placeholder="From" readonly>
+								<span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+			                </div>
+							<input type="hidden" id="inp-datetime_from" value="" /><br/>
+
+						</div>
+						<div class="form-group inline-datetime">
+							<label class="sr-only" for="inp-datetime_to">To</label>
+							<div class="form-control input-container">
+								<input size="16" type="text" value="" readonly class="form_datetime" placeholder="Check in">
+								<span class="glyphicon glyphicon-time input-label"></span>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="sr-only" for="inp-people">Number of people</label>
+							<div class="input-group inp-people-group">
+								<input type="text" name="region" class="form-control" id="inp-people">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-default">Go</button>
+					</form>
+
+				</div>
+			</div>
+
+		</div>
+
+	    <div class="container">
+	      <!-- Example row of columns -->
+	      <div class="row">
+	        <div class="col-md-4">
+	          <h2>Heading</h2>
+	          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+	        </div>
+	        <div class="col-md-4">
+	          <h2>Heading</h2>
+	          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+	       </div>
+	        <div class="col-md-4">
+	          <h2>Heading</h2>
+	          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+	          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+	        </div>
+	      </div>
+
+	    	<hr />
+
+	    </div>
+
+		<!-- Scripts in the end -->
+	    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+		<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+		<script type="text/javascript" src="js/wine-core.js"></script>
+		<script type="text/javascript" src="js/wine-maps.js"></script>
+
+		<!-- Initialize subsystem -->
+		<script type="text/javascript">
+		Wine.Initialize();
+		</script>
+
+	</body>
+</html>

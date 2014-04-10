@@ -1,0 +1,84 @@
+
+@color:	#FFFFFF;
+
+body {
+	background: @color;
+}
+
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.form-control.input-container input {
+	border: none;
+}
+
+#p-header {
+	height: 80px;
+	background: #666;
+
+	.logo {
+		padding-left: 20px;
+		padding-top: 10px;
+
+		h1 {
+			padding: 0; margin: 0;
+			font-size: 24pt;
+			color: #FFF;
+		}
+		span {
+			color: #AAA;
+		}
+	}
+
+	#btn-take-part {
+		margin-top: 25px;
+	}
+}
+
+#p-map {
+	height: 400px;
+	position: relative;
+	margin-left: -15px;
+	margin-right: -15px;
+
+	#map-element {
+		position: absolute;
+		left: 0; top: 0;
+		width: 100%; height: 100%;
+	}
+
+	#map-query {
+
+		// Location
+		position: absolute;
+		left: 30px; top: 50px;
+
+		// Style
+		background: rgba(255,255,255,0.8);
+		border-radius: 25px;
+		padding: 18px;
+
+		.form-inline {
+			margin-bottom: 0;
+		}
+
+		// Inline form fix
+		.inline-datetime {
+			height: 34px;
+
+			.form_datetime {
+				width: 165px;
+			}
+		}
+		#inp-people {
+			width: 50px;
+		}
+		.inp-people-group {
+			width: 60px;
+		}
+
+	}
+}
+
